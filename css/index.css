@@ -1,5 +1,5 @@
 html {
-  background: linear-gradient(200deg, red, violet);
+  background: linear-gradient(200deg, var(--bottom-color), var(--top-color));
   background-size: 600% 600%;
   background-attachment: fixed;
   height: 100%;
@@ -11,7 +11,7 @@ html {
   margin: 25px auto;
   padding: 20px;
   width: 500px;
-  height: 500px;
+  height: auto;
   background-color: rgb(245, 245, 250);
   border-radius: 10px;
   display: flex;
@@ -64,8 +64,8 @@ input:focus {
   grid-template-rows: repeat(5, 20%);
 }
 
-.active-square {
-  background-color: rgb(0, 0, 0)
+.empty {
+  background-color: #ffffff;
 }
 
 .fill {
